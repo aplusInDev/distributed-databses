@@ -1,0 +1,24 @@
+services:
+  oracle-vm1:
+    build:
+      context: ./scripts/vm1
+    container_name: oracle-vm1
+    ports: ["1521:1521"]
+
+  oracle-vm2:
+    build:
+      context: ./scripts/vm2
+    container_name: oracle-vm2
+    ports: ["1522:1521"]
+
+  oracle-vm3:
+    build:
+      context: ./scripts/vm3
+    container_name: oracle-vm3
+    ports: ["1523:1521"]
+
+  oracle-central:
+    build:
+      context: ./scripts/central
+    container_name: oracle-central
+    ports: ["1524:1521"]
