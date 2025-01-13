@@ -102,8 +102,8 @@ services:
 ### 3. Starting the Containers
 ```bash
 # Clone the repository
-git clone [repository-url]
-cd [repository-name]
+git clone https://github.com/aplusInDev/distributed-databses
+cd distributed-databses
 
 # Start the containers
 docker-compose up -d
